@@ -1,0 +1,11 @@
+// Function to open a new window with dev tools enabled
+function openDevToolsWindow() {
+    const newWindow = window.open("", "DevToolsWindow", "width=800,height=600");
+    // Add content to the new window
+    newWindow.document.write("<h1>Welcome to the Dev Tools Window</h1>");
+    newWindow.document.write("<p>Use your developer tools here!</p>");
+    newWindow.document.close();
+}
+
+// Call the function to open the window
+openDevToolsWindow();
